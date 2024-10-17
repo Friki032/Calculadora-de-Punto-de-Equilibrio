@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Punto de Equilibrio</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <h1>Calculadora de Punto de Equilibrio</h1>
+    <form id="breakEvenForm">
+        <label for="incomePerUnit">Ingresos por Unidad:</label>
+        <input type="number" id="incomePerUnit" placeholder="Ej: 50" required>
+
+        <label for="variableCosts">Costos Variables por Unidad:</label>
+        <input type="number" id="variableCosts" placeholder="Ej: 30" required>
+
+        <label for="fixedCosts">Costos Fijos Totales:</label>
+        <input type="number" id="fixedCosts" placeholder="Ej: 1000" required>
+
+        <button type="submit">Grafico</button>
+    </form>
+
+    <div id="result"></div> <!-- Este div mostrará los resultados más adelante -->
+
+    <script src="script.js"></script> 
+</body>
+</html>
